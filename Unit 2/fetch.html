@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="fetchdata()">fetch</button>
+        <div id="div1"></div>
+        <script>
+            function fetchdata()
+            {
+                x=document.querySelector("#div1")
+                fetch("as.mp4")
+                .then(function(data)
+                {
+                    return response.blob()
+                })
+                .then(function(data)
+                {
+                    vid=document.createElement("as")
+                    vid.controls=true
+                    vid.src=URL.createObjectURL(data)
+                    x.appendChild(vid)
+                })
+                .catch(function(error){
+                    console.log(error.message)
+                })
+            }
+        </script>
+    </body>
+</html>

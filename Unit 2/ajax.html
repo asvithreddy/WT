@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            function load()
+            {
+                var xhr=new XMLHttpRequest();//to create an object
+                xhr.open("get","demo.txt",true)//open a file
+                xhr.onreadystatechange=showdata;
+                xhr.responseType="text";
+                xhr.send()//request to server
+            }
+            function showdata()
+            {
+                console.log("in function showdata");
+                if(this.readytate==4 && this.status==200)// if this.readystate=0 is unintialization 1 is for loading 2 is 
+                {
+                    document.getElementById("#div1").innerHTML=this.responseText;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="load()">Load</button>
+        <div id="div1"></div>
+    </body>
+</html>

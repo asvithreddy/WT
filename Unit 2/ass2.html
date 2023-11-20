@@ -1,0 +1,122 @@
+
+<html>
+    <body>
+        <svg width="1000" height="1000">
+
+            <circle cx="120" cy="100" r="100" fill="lightblue" />
+  <text x="120" y="100" text-anchor="middle" fill="black"> PES1UG22CS262</text>
+        </svg>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <p>
+        <b>"I love iQuery!!!</b>This is a paragraph.
+        </p>
+        <script>
+        $(document).ready(function()
+        {
+            $("p")
+        })
+        </script>
+    </body>
+</html> -->
+
+
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <button id="b1">Toggle List</button> 
+        <script>
+            $(document).ready(function()
+            {
+                $("#b1").click(function()
+                {
+                    $("#d1").slideToggle(100)
+                })
+            })
+        </script>
+        <div id="d1">
+            <ul type="square">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>                
+        </div>
+    </body>
+</html> -->
+
+<html>
+    <body>
+        <div>
+            <h1 id="a1">Halo 2 video game</h1>
+            <p id="p2">price $50.00</p>
+        </div>
+        <script>
+            const a1 = document.getElementById('a1');
+        const p2 = document.getElementById('p2');
+        p2.addEventListener('click', () => {
+            alert("Hurry up, discount sale is going on!!!");
+        });
+        a1.addEventListener('click', function() {
+            const gameDetails = "Title: Halo 2 video game \nPrice: $50.00 \nRating: 4.5 stars";
+            alert(gameDetails);
+        });
+        </script>
+    </body>
+</html>  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p id="myParagraph"><b>I love jQuery!!!</b></p>
+    <script>
+        $(document).ready(function() {
+            // Create a jQuery object for the <b> element
+            var ele = $('<p>this is a paragraph<p>');
+
+
+            // Get the <p> element by its ID
+            var paragraph = $('#myParagraph');
+
+
+            // Insert the <b> element at the beginning of the <p> element
+            paragraph.append(ele);
+        });
+    </script>
+</body>
+</html> -->
+
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p id="myParagraph">This is a paragraph.</p>
+    <script>
+        $(document).ready(function() {
+            // Create a jQuery object for the <b> element
+            var ele = $('<b>I love jQuery!!!</b>');
+
+
+            // Get the <p> element by its ID
+            var paragraph = $('#myParagraph');
+
+
+            // Insert the <b> element at the beginning of the <p> element
+            paragraph.prepend(ele);
+        });
+    </script>
+</body>
+</html>

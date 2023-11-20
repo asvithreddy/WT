@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="div1">Maruthi</div>
+        <div id="div2"> Srinu</div>
+        <div id="div3">Kot</div>
+        <button id="b1">Clickme</button>
+        <br>
+        <p id="p1" style="display: none;">East</p>
+        <script>
+            $(document).ready(function()
+            {
+                $("#b1").click(function()
+                {
+                 //$("#div1").fadeOut();
+                 //$("#div2").fadeIn("slow");
+                 //$("#div3").fadeOut(1000)//Fade out is used to blur it and FadeIn is used to keep it dark
+                //you can use fadeToggle instead of using out and in 
+                // $("#div1").fadeToggle();
+                // $("#div2").fadeToggle("slow");
+                // $("#div3").fadeToggle(1000)
+                $("#div1").slideUp(1000)
+                $("#div2").slideToggle(1000)
+                $("#p1").slideDown(1000)
+
+            })
+        })
+        </script>
+    </body>
+</html>

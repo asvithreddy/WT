@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function getpos()
+            {
+                navigator.geolocation.watchPosition(success,error)
+            }
+            function success(position)
+            {
+                ps=position;
+                document.write("current position:"+position.coords.longitude+position.coords.latitude);
+            }
+            function error(error)
+            {
+                e=error;
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="getpos()">Get Position</button>
+    </body>
+</html>

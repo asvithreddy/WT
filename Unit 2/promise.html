@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            var date=new Promise(function(resolve,reject)
+            {
+                setTimeout(function()
+                {
+                    weather=false;//ig u give weather=true, then you get resolve details in the condole, if false , you get bad weather printed in the console
+                    if(weather)
+                    {
+                        const datedetails={name:'lalitmodi',location:'bangalore',table:'10'}
+                        resolve(datedetails)
+                    }
+                    else
+                    reject(new Error('bad weather'))
+                },3000)
+            })
+            date.then(function(details)
+            {
+                console.log(details);
+                console.log("Your going on the date")
+            })
+            .catch(function(error)
+            {
+                console.log(error.message)
+            })
+        </script>
+    </body>
+</html>

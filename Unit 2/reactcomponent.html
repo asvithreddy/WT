@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script>
+        <script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+    </head>
+    <style>
+        .greeting{ color:blue}
+        .shocking{color:red}
+    </style>
+    <body>
+        <div id="container"></div>
+        <script type="text/babel">
+            var dest = document.querySelector("#container");
+            class HelloWorld extends React.Component{
+                render(){
+                    return <div className={this.props.type}>
+                        <h1> {this.props.children}</h1>
+                    </div>
+                }
+            }
+            ReactDOM.render(
+                <div>
+                    <HelloWorld type="greeting">
+                        Hello Maruthi
+                    </HelloWorld>
+                    <HelloWorld type="shocking">
+                        Where is Preethi?
+                    </HelloWorld>
+                </div>,
+                dest
+            );
+            class Letter extends React.Component{
+                render(){
+                    var letterstyle={
+                        backgroundColor:"green",color:"yellow",display:"inline-block",padding:"25px",margin:"25px"
+
+                    }
+                    return <div style={letterstyle}>{this.props.children}</div>
+                }
+            }
+            ReactDOM.render(
+                <div>
+                    <Letter type="greeting">
+                        Hello Maruthi
+                    </Letter>
+                    <Letter type="shocking">
+                        Where is Preethi?
+                    </Letter>
+                </div>,
+                dest
+            );
+            
+            
+        </script>
+    </body>
+</html>

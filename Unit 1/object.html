@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <script>//object constructer
+        //1
+            var emp={
+                "firstname":"Maruthi",
+                "lastname":'Srinu',
+                "showname":function()
+                {
+                    alert(this.firstname+" "+this.lastname)
+                }
+            }
+            emp.showname()
+            //2
+            function employee(fname,lname)
+            {this.firstname="Maruthi",
+                this.lastname='Srinu',
+                this.showname=function()
+                {
+                    document.write(this.firstname+" "+this.lastname)
+                }
+            }
+            var emp1=new employee()
+            emp1.showname()
+            //2
+            var Employee=new function()
+            {
+                this.firstname="Maruhi",
+                this.lastname='Srinu',
+                this.showname=function()
+                {
+                    document.write(this.firstname+" "+this.lastname+" "+this.age)
+                } 
+            }
+            var emp2=new Employee()
+            Employee.prototype.age=50;
+            emp2.showname()
+            
+        
+
+        </script>
+    </body>
+</html>

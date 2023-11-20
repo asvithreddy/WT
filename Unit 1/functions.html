@@ -1,0 +1,114 @@
+<!-- functions are declared
+let name=functions(parameters){
+    statments
+}
+or
+let name =(parameters)=>{
+    statments
+}
+
+[retval =] function_name([arguments[,]])
+
+
+var a,b;
+function add(a,b)
+{
+    x=a+b
+    return x
+}
+result.add(10,20)
+
+
+Hoisting: it behavoiur of  moving all the varialble asdjn ffunbctions declarations to the top of the urent scope
+
+
+num=4;
+console.log(num)
+var num=8
+
+
+
+var x;
+console.log(x)
+x=100;
+this is  uhndefined error
+
+
+console.log(x)
+x=200;
+
+rthis ois reference error(this is because of Hoisting)
+
+
+
+var a=20;
+function hoist()
+{
+    if(false)
+    {
+        var a=20;
+    }
+    console.log(a);
+}
+hoist()    this is error  because a was hoisted to the top of the hoist dunction and the vlaue became undefined
+
+
+
+
+var a=10;
+var a=20;
+console.log(a) // this doesnt give error and it prints 20
+
+let a=10;
+let a=20;
+console.log(a)// this is syntax error as we cant assing let for a variable twice
+ -->
+
+
+<!-- <html>
+    <head>
+       
+    </head>
+    <body>
+        <p id="p1">
+            <script>
+                function func(f1,f2)
+                {
+                    return f1*f2;
+                }
+                let result=func(10,10)
+                document.getElementById("p1").innerHTML=result
+            </script>
+    </body>
+</html>
+ -->
+Hoisting Errors
+
+
+ <html>
+    <body>
+        <p id="p1"></p>
+        <script>
+            x=5
+            document.getElementById("p1").innerHTML=x
+            //var x// its not getting var
+            //let x // we get a error and there is nothing printing on the page and you can see the error in the console  
+            //var allows redeclaration
+            //let cannot allow redeclaration
+            var a=10;
+            function hoist()
+            {
+                var a=10;
+                if (false)
+                {
+                    var a=20;
+                }
+                console.log(a);
+            }
+            hoist();// we are getting undefined in the console 
+            //if we declare var a=10 in the function , then we get displayed
+
+        </script>
+    </body>
+ </html>
+

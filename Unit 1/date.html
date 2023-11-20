@@ -1,0 +1,51 @@
+<!-- date methods -->
+<!-- in javascript, date and array is an object -->
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <button onclick="func()">Click me</button>
+        <button onclick="stop()">a</button>
+        <script>
+            var d=new Date()
+            let x=d.getDate()
+            let y=d.getMonth()
+            let z=d.getFullYear()
+            document.write(x+'/'+y+'/'+z)
+            document.write("<br>")
+            document.write("<br>")
+            var d1=new Date("2015-04-12")
+            let x1=d1.getDate()
+            document.write(x1)
+            d2=new Date("2023-03-21")
+            document.getElementById("demo").innerHTML=d2
+
+            function func()
+            {
+                let person=prompt("enter the name")
+                if(person!=null)
+                {
+                    document.getElementById("p1").innerHTML="hi"+person
+                }
+            }
+            let x2=window.location.origin
+            document.getElementById("p2").innerHTML=x2
+            let y2=history.length;
+            document.getElementById("p3").innerHTML=y2
+            setInterval(func1(),1000);
+            const clrInt=setInterval(func1,1000)
+            function func1()
+            {
+                document.getElementById("p4").innerHTML+='hi'
+            }
+            function stop()
+            {
+                clearInterval(clrInt)
+            }
+
+        </script>
+    </body>
+</html>

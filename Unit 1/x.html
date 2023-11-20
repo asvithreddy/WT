@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body style="background-color:powderblue;">
+    <title>PES Students Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="C:\Users\hp\OneDrive\Desktop\pesu logo.jpg"alt="PESU Logo" id="logo" width="300" height="200">
+         <style>
+         img {
+               display: block;
+               margin-left: auto;
+               margin-right: auto;
+             }
+	input[type="submit"],input[type="reset"]
+	{
+		background-color:black;
+		color:white;
+		border:none;
+	}
+
+	input[type="submit"]:hover,input[type="reset"]:hover{
+		background-color:rgb(181, 122, 122);
+	}
+         </style>
+        <h1>PES Students Survey Form</h1>
+    </header>
+
+    <form id="surveyForm" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Student Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone No:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]+" required>
+
+            <label>Other Details:</label>
+		<textarea id="details" name="details" rows="4" cols="50"></textarea>
+		
+            <p>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </p>
+            <p>
+                <input type="checkbox" id="subscribe" name="subscribe" value="Yes">
+                <label for="subscribe">Subscribe to newsletter</label>
+            </p>
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="Computer Science">Computer Science</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback</legend>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <script>
+        function validateForm() {
+            alert("successfully submitted");
+            return false;
+        }
+    </script>
+</body>
+</html>

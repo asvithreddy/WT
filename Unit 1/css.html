@@ -1,0 +1,104 @@
+<!--<html>
+    <head>
+        <style>
+            div{
+                background-color:aliceblue;
+                width: 250px;
+                border: 5px solid yellow;
+                border-top: 5px dashed rebeccapurple;
+                border-bottom: 5px dotted red;
+                border-radius: 50px;
+                padding: 50px;
+                margin: 100px;
+            }
+        </style> 
+
+    </head>
+    <body>
+        <div>
+            this is class
+        </div>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            a:link{color:aliceblue}
+            a:visited{}
+        </style>
+    </head>
+</html>
+-->
+
+<html>
+    <head>
+        <style>
+            a:link{color: red;}
+            a:visited{color: blue;}
+            a:hover{color: green;}
+            a:active{color:pink;}
+            p::first-letter{
+                color: black;
+            }
+            p::first-line{
+                color:red; 
+            }
+            div:first-child{
+                color: aqua;
+            }
+            p:first-child{
+                background-color: yellow;
+            }
+            a[target="_blank"]{
+                background-color: yellow;
+            }
+            [title~="tree"]{
+                border:5px solid yellow;
+            }
+            [title$="tree"]{
+                border-top: 5px solid black;
+            }
+            [title^="tree"]{
+                border-bottom: 5px solid red;
+            }
+            [title|="tree"]{
+                border-top: 5px solid blue;
+            }
+            nav
+                ul{
+                    margin: 50;
+                    padding: 10px;
+                    list-style: none;
+                }
+        </style>
+    </head>
+    <body>
+        <p>Hello</p>
+        <p>Hi</p>
+    <div>
+        <p>Web tech</p>
+        <p>
+            <a href="css_tags.html" target="_blank">Click me for CSS tags</a>
+        </p>
+        <p>
+            <a href="https://www.google.com">google</a><br>
+            <img src="square.jpg" title="tree" width="150" height="300"><br>
+            <img src="square.jpg" title="flr_tree" width="150" height="300"><br>
+            <img src="square.jpg" title="flr-tree" width="150" height="500">
+        </p>
+        <p>
+            This is Class this is class this is class
+        </p>
+    </div>
+    <div>
+        <p>Bye</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">html</a></li>
+            <li><a href="#">web</a></li>
+        </ul>
+    </nav>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <button id="btn">Click me</button>
+        <p id="p1"></p>
+        <script>
+            var x=document.getElementById("btn");
+            x.addEventListener("mouseover",first)
+            x.addEventListener("click",second)
+            x.addEventListener("mouseout",third)
+            function first(){
+                document.getElementById("p1").innerHTML="p content is mouse over</br>"
+            }
+            function second(){
+                document.getElementById("p1").innerHTML="p content is click</br>"
+            }
+            function third(){
+                document.getElementById("p1").innerHTML="p content is mouseout</br>"
+            }
+            
+        </script>
+    </body>
+</html>

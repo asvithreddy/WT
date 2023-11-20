@@ -1,0 +1,44 @@
+creating a form using html and defining what it is 
+there are many methods in the form
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form method="get" action=" " autocomplete="on"><!-- we use autocomplete to see the data which is already submitted-->
+            Name: <input type="text" value="name" > 
+            <br><br>
+            Address: <textarea> Enter the address</textarea>
+            Gender :<input type="radio" value="Male" name="dd" checked> Male
+            <br><br>
+            <input type="radio" value="Female" name="dd" checked> Female
+            <br><br>
+            Branch: <input type="checkbox" value="CSE" name="CSE"> CSE
+            <br>
+            <input type="checkbox" value="ECE" name="ECE"> ECE
+            <br>
+            <input type="checkbox" value="AIML" name="AIML"> AIML
+            <br>shown
+            Select subjects <select id="subjects">  
+                <option value="WT">WT</option>
+                <option value="DDCO">DDCO</option>
+                <option value="SDS">SDS</option>
+                <option value="DS">DS</option>
+            </select>
+            <br><br>
+            Select subjects <select id="subjects" size="2">  to get the size you have to use to show the number of options to be shown
+                <option value="WT">WT</option>
+                <option value="DDCO">DDCO</option>
+                <option value="SDS">SDS</option>
+                <option value="DS">DS</option>
+            </select>
+            <input type="button" onclick="alert('hello')" value="click me">
+            <br><br>
+            <input type="submit" value="submit form">
+            <input type="reset" value="reset form">
+
+            
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <a id="e" href="https://www.google.com/">Google</a>
+        <p>prevent default</p>
+        <script>
+            document.getElementById("e").addEventListener("click",function(e)
+            {
+                event.preventDefault();
+                alert("it is prevented")
+            })
+        </script>
+    </body>
+</html>

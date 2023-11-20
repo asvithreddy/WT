@@ -1,0 +1,74 @@
+css selectors
+1)primary-
+        id     
+        class
+        element
+2)pseudo
+    classes
+    link:unvisited     elements: first child
+        visited                 first line
+        hover                   firstletter
+        active
+        focus
+3)
+    attributes
+4) NEsted
+5) UNiversal
+
+<html>
+    <head>
+        <style>
+            a:link {color:red;}
+            a:visited{color:aqua;}
+            a:hover{color: beige;}
+            a:active{color: blueviolet;}
+            p::first-letter{color:brown;} 
+            p ::first-line
+            {
+                color :  rebeccapurple;
+            }
+            div:first-child
+            {
+                color:green; 
+            }
+            div:first-child
+            {
+                background-color:gold;
+            }
+        </style>
+    </head>
+    <body>
+        <p>HEllo</p>
+        <p>Hi</p>
+        <div><p>pes</p></div>
+        <div>
+            <p>WT</p>
+            <p> <a href="forms.html"> Click me for css properties</a></p>
+            <p> <a href="https://www.instagram.com"> Instagram</a></p>
+            <p>THis is class E THis is class ETHis is class ETHis is class Ev </p>
+        </div>
+    </body>    
+</html>        
+        
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Absolute Positioning</title>
+        <style type="text/css">
+            .panda{position:absolute;top:0px;left:0px;z-index:1;}
+            .foreground_image{position:absolute;top:25px;left:100px;z-index: 2;}
+            .text{position: absolute;top:25px;left:100px;z-index: 3;font-size:20pt;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        </style>
+    </head>
+    <body>
+        <p><img src="panda.JPG"class="panda"></p>
+    </body>
+</html>
+
+
+
+    

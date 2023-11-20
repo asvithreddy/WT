@@ -1,0 +1,31 @@
+there are many global objects in the javascript<br>
+math ,number ,string ,array ,data ,window ,document
+<br>
+<br>
+<html>
+    <body>
+        <script>
+            var Courses=["HTML","CSS","JAVASCRIPT","React"];
+            var Courses1=["HTML","CSS","JAVASCRIPT","React"];
+            var Courses2=["JAVA","C++","PYTHON"];
+            Courses.push("WT");// push-add the elemt to the end
+            Courses.pop()// pop-deletes the elent from the end
+            Courses.unshift("Express")// unshift- it usd to add the elemnt in the begning
+            Courses.shift() //it delets the element from the begning
+            var x=Courses.join("*");
+            document.write(Courses)
+            document.write(x)
+            let y=Courses1.concat(Courses2);
+            document.write(y)
+            let z=y.slice(5);
+            document.write(z)
+            z=y.slice(3,5)
+            document.write(z)
+            let a=Courses1.sort()
+            let b=Courses2.reverse()
+            document.write(a)
+            document.write(b)
+
+        </script>
+    </body>
+</html>

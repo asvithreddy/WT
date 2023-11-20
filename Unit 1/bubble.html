@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <div id="div1">This is div1
+            <div id="div2">This is div2
+            <div id="div3">This is div3
+            </div>    
+            </div>
+        </div>
+        <script>
+            var x=document.getElementsByTagName("div")
+            for(var i=0;i<x.length;i++)
+            {
+                x[i].addEventListener("click",clickhandler,true);
+                x[i].addEventListener("click",clickhandler,false);
+                
+            }
+            function clickhandler(event)
+            {
+                alert(this.getAttribute("id")+"clicked")
+            }
+        </script>    
+    </body>
+</html>

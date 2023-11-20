@@ -1,0 +1,49 @@
+<!-- 04-09-23  document object model-->
+ <!-- <html>
+    <body>
+        <div id="div1">
+            <p id="p1">first child of div</p>
+            <p>second child of div</p>
+        </div>
+        <script>
+            const x=document.createElement("p")
+            const y=document.createTextNode("created from script ")
+            x.appendChild(y);
+            const z=document.getElementById("div1");
+            z.appendChild(x)
+            //document.getElementById("p1").remove()
+        </script>
+    </body>
+</html>  -->
+
+
+<html>
+    <body>
+        <button id="btn" onclick="func()"> Click me</button>
+        <p id="p1"></p>
+        <p>first</p>
+        <p>second</p>
+        <ul id="l1">
+            <li>Python</li>
+            <li>Java</li>
+        </ul>
+        <script>
+            let t=document.getElementById("btn").innerText;
+            document.getElementById("p1").innerHTML=t;
+            const x=document.createElement("li")
+            const y=document.createTextNode("Javascript")
+            x.appendChild(y)
+            const z=document.getElementById("l1")
+            z.insertBefore(x,z.children[1])
+            function func()
+            {
+                const a=document.getElementsByTagName("p")
+                for(let i=0;i<a.length;i++)
+                {
+                    a[i].style.color="yellow"
+                }
+            }
+        </script>
+    </body>
+</html>
+-->

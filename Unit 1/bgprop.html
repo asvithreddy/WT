@@ -1,0 +1,78 @@
+<!--
+position (these are used to display the position)
+    relative
+    absolute
+    static
+    fixed 
+    sticky-->
+
+
+    <!--  if we dont use backgroundrepeat it will display many times repeat-x for repeating in xdirection -->
+<html>
+    <head>
+        <title>Web</title>
+        <style>
+            /* body
+            {
+                background-image: url('asvith.jpg');
+                background-repeat: no-repeat; 
+                
+                background-position:bottom ;
+                background-color:grey;
+                background-attachment:fixed;
+                background: rgba(0,0,1,0.3);
+                background: hsla(0,50%,100%,0.8);hue, saturation, lightness, alpha
+
+            } */
+            div.static
+            {
+                position: static;
+                border: 5px solid black;
+            }
+            div.relative
+            {
+                position:relative;
+                left:20px;
+                border:5px solid red;
+            }
+            div.absolute
+            {
+                position:absolute;
+                top: 100px;
+                border:30px solid yellow;
+            }
+            div.fixed
+            {
+                position: fixed;
+                bottom:0 ;
+                right: 0;
+                width:300px;
+                border:20px solid green;
+            }
+            div.sticky
+            {
+                position:sticky;
+                background-color:honeydew ;
+                border:2px dotted;
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is web</p>
+        <div class="static">
+            the position is static
+        </div>
+        <div class="relative">
+            the position is relative
+        </div>
+        <div class="absolute">
+            the position is absolute
+        </div>
+        <div class="fixed">
+            the position is fixed
+        </div>
+        <div class="sticky">
+            the position is sticky
+        </div>
+    </body>
+</html>

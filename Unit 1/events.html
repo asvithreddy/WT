@@ -1,0 +1,24 @@
+
+<html>
+    <body>
+        <p id="p1"></p>
+        <!-- Fname:<input type="text" id='ip1' onkeydown="keyeventdown()"></br>
+        Lname:<input type="text" id="ip2" onkeypress="func(event)"></br> -->
+        Fname;:<input type="text" id="ip1"onfocus="func()">if we use onfocus , then if we type a small letter word and then click on the blankl space and then again click ojn the text , then you it will be converted to toUpperCase
+        if we use onblur=func() then , if you type a small letter word and then you click o the white space, then the it will be converted to toUpperCase
+        <script>
+            function keyeventdown()
+            {
+                document.getElementById("ip1")
+                alert("pressed a key");
+            }
+            function func(event)
+            {
+                // var x=event.charCode;
+                // document.getElementById("p1").innerHTML="the unicode value is"+x;
+                let x=document.getElementById("ip1")
+                x.value=x.value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>

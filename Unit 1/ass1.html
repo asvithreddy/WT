@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>PES Students surveyForm</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <img src="logoPesu.png" width="200" height="80"><br>
+        <header><h3>Pes Students Survey Form</h3></header>
+        <form onsubmit="Submit()">
+            <fieldset >
+                <legend>Student Details:</legend>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your name" name="name" required>
+                <br>
+                email-id<input type="text" placeholder="Enter your email-id" name="email" required>
+                <br>
+                Phone Number:<input type="tel" placeholder="Enter your number" pattern="[0-9]{10}" required>
+                <br>
+                SRN:<input type="text" placeholder="Enter your SRN" name="srn" required><br>
+                <br>
+                Gender: <input type="radio" name="Gender" value="Male" >Male <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Gender" value="female">Female<br>
+                <label for="branch">Branch:</label>
+                <select id="branch" name="branch">
+                    <option value="cse">CSE</option>
+                    <option value="ece">ECE</option>
+                    <option value="aiml">AIML</option>
+                </select>
+                <br>
+                Sem:<select id="sem" name="sem" size="0">
+                    <option value="sem1">Sem1</option>
+                    <option value="sem2">Sem2</option>
+                    <option value="sem3">Sem3</option>
+                    <option value="sem4">Sem4</option>
+                    <option value="sem5">Sem5</option>
+                    <option value="sem6">Sem6</option>
+                    <option value="sem7">Sem7</option>
+                    <option value="sem8">Sem8</option>
+
+                </select>
+                Interested Activities:<input type="checkbox" name="activity" value="Cricket">Cricket
+                <input type="checkbox" name="activity" value="Football">Football
+                <input type="checkbox" name="activity" value="TT">TT
+                <br>
+                <label>Other Details:</label>
+		        <textarea id="details" name="details" rows="4" cols="50"></textarea>
+                <br>
+            </fieldset>
+            <fieldset>
+                Feedback:<textarea id="feedback" rows="4" cols="50"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          
+        </form>
+        <script>
+            function Submit()
+            {
+                alert("Form is Submitted Succesfully");
+            }
+        </script>
+
+
+    </body>
+</html>
